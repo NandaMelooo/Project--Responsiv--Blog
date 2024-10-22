@@ -1,0 +1,110 @@
+/*====COLORS====*/
+:root {
+  --primary-green: rgba(2, 162, 143, 1);
+  --primary-color: white;
+}
+
+/*====INFOS PADRÃO====*/
+html {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  height: auto;
+  margin: 3.1rem 0 1.75rem 9.75rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* A primeira coluna será 2x maior que a segunda */
+  gap: 10px; /* Espaço entre as colunas */
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+h2 {
+  color: var(--primary-color);
+  padding: 0.75rem 2rem 0.75rem 1.5rem;
+}
+
+/*====HEADER====*/
+
+#title-dev {
+  color: var(--primary-color);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 1rem 1rem 1rem 9.5rem;
+  align-items: flex-start right;
+}
+
+body > header {
+  background-color: var(--primary-green);
+  width: 100%;
+  height: 5rem;
+}
+
+/*=======Seção Posts=========*/
+
+.container > img {
+  margin: 0;
+  padding: 0;
+}
+
+.column-card {
+  margin-top: 0;
+}
+.img_principal {
+  width: auto;
+  height: auto;
+}
+
+.subtitle-green {
+  background-color: var(--primary-green);
+  border-radius: 0.5rem;
+  width: 22.5rem;
+}
+
+.subtitle-green > h2 {
+  margin: 0;
+}
+
+.cards {
+  width: 22.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 0.25rem;
+  padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0.25rem 0.5rem 0.2rem rgba(204, 203, 203, 0.692);
+}
+
+.cards > img {
+  width: 8.25rem;
+  height: 4.4rem;
+  margin-right: 0.8rem;
+}
+
+.cards-text {
+  margin: 0;
+}
+
+.cards-text > h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+.cards-text > p {
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+  font-size: 0.75rem;
+  color: rgba(97, 97, 97, 1);
+}
