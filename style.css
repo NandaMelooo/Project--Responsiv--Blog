@@ -18,14 +18,12 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: auto;
   height: auto;
-  margin: 3.1rem 0 1.75rem 9.75rem;
+  padding: 3rem 9.5rem 0 8rem;
   display: grid;
   grid-template-columns: 2fr 1fr; /* A primeira coluna será 2x maior que a segunda */
-  gap: 10px; /* Espaço entre as colunas */
-  justify-content: space-around;
-  align-items: flex-start;
+  gap: 1.5rem; /* Espaço entre as colunas */
 }
 
 h2 {
@@ -46,29 +44,40 @@ h2 {
 
 body > header {
   background-color: var(--primary-green);
-  width: 100%;
+  width: auto;
   height: 5rem;
 }
-
-/*=======Seção Posts=========*/
-
-.container > img {
+body > main {
   margin: 0;
   padding: 0;
 }
 
+/*=======Seção Posts Lateral=========*/
+
 .column-card {
+  width: 100%;
+  height: 100%;
   margin-top: 0;
+  justify-content: space-between;
 }
-.img_principal {
-  width: auto;
+#img_principal {
+  width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 
+#img_principal > img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
 .subtitle-green {
   background-color: var(--primary-green);
   border-radius: 0.5rem;
-  width: 22.5rem;
+  width: auto;
+  margin: 1rem 0 2.5rem 0;
 }
 
 .subtitle-green > h2 {
@@ -76,13 +85,13 @@ body > header {
 }
 
 .cards {
-  width: 22.5rem;
+  width: auto;
   font-size: 1rem;
   display: flex;
-  justify-content: flex-start;
+  align-content: space-between;
   border-radius: 0.25rem;
-  padding: 0.8rem 1.5rem 0.8rem 0.8rem;
-  margin-bottom: 1.2rem;
+  padding: 0.8rem 1rem 2rem 0.8rem;
+  margin-bottom: 2.5rem;
   box-shadow: 0.25rem 0.5rem 0.2rem rgba(204, 203, 203, 0.692);
 }
 
@@ -107,4 +116,57 @@ body > header {
   padding: 0.5rem 0 0 0;
   font-size: 0.75rem;
   color: rgba(97, 97, 97, 1);
+}
+
+/*=======Seção Posts Recentes=========*/
+
+.title-post {
+  color: var(--primary-color);
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+
+.title-post > h2 {
+  justify-items: flex-start;
+}
+
+.title-post > p {
+  margin-left: 26rem;
+}
+
+#underline {
+  font-size: 0.9rem;
+  text-decoration: underline;
+  justify-content: flex-end;
+  width: auto;
+  height: auto;
+}
+
+#categorias {
+  font-size: 1.25rem;
+  padding: 0.8rem auto 0.8rem 1.5rem;
+}
+
+#section-posts-recentes {
+  margin-left: 1rem;
+}
+
+.item-decoration > li {
+  display: flex;
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: 600;
+  align-items: flex-start;
+}
+
+.item-decoration > ul {
+  margin: 0;
+}
+
+.item-text {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-bottom: 1rem;
 }
