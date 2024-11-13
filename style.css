@@ -152,16 +152,10 @@ body > main {
   margin-left: 1rem;
 }
 
-.item-decoration > li {
-  display: flex;
-  list-style-type: none;
-  font-size: 1rem;
-  font-weight: 600;
-  align-items: flex-start;
-}
-
-.item-decoration > ul {
+#item-decoration {
+  list-style-type: none; /* Remove as marcações */
   margin: 0;
+  padding: 0;
 }
 
 .item-text {
