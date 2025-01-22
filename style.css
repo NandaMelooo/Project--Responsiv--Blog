@@ -2,6 +2,7 @@
 :root {
   --primary-green: rgba(2, 162, 143, 1);
   --primary-color: white;
+  --primary-grey: rgba(97, 97, 97, 1);
 }
 
 /*====INFOS PADRÃO====*/
@@ -118,13 +119,14 @@ body > main {
   color: rgba(97, 97, 97, 1);
 }
 
-/*=======Seção Posts Recentes=========*/
+/*=======Seção Posts Recentes- Categoria=========*/
 
 .title-post {
   color: var(--primary-color);
   display: flex;
   padding: 0;
   align-items: center;
+  justify-content: space-around;
 }
 
 .title-post > h2 {
@@ -163,4 +165,40 @@ body > main {
   list-style-type: none;
   justify-content: space-between;
   padding-bottom: 1rem;
+}
+
+/*=======Seção Posts Recentes=========*/
+#cards-section {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+.cards-organizacao {
+  width: 22.5rem;
+  height: 24.75rem;
+  border: solid;
+  border-radius: 1rem;
+}
+
+.cards-numb {
+  margin: 0;
+  padding: 0.9rem 1rem 0.9rem 1rem;
+}
+.cards-numb > p {
+  margin: 0;
+  padding: 0;
+}
+
+.cards-numb > h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--primary-grey);
+}
+
+.cards-numb > h3 {
+  margin: 0;
+  padding: 0;
 }
